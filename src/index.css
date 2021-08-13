@@ -18,9 +18,12 @@ code {
     width:100%;
     padding:20px;
 }
+.ui.table{table-layout:fixed;}
 .ui.table tr td{
     padding:5px;
 }
+.ui.table thead th{position: relative;}
+.ui.table thead th i.icon.arrow.down{font-size: 12px;padding-right: 5px;}
 i.icon{
     position: absolute;
     right:0px;
@@ -31,7 +34,69 @@ i.icon{
 .ui.input{
     margin-right:20px;
 }
+.row-group{
+    float: left;
+    margin-bottom: 20px;
+}
+.row-group label{display: block;margin-bottom: 5px;font-weight: bold;}
+.skill-box{
+    width: 320px;
+    overflow: hidden;
+}
+.box-row {
+    position: relative;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.box-row img{width: 150px;}
+.box-row label{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    color: white;
+    font-size: 10px;
+    left: 5px;
+    padding: 10px;
+    line-height: 1.2;
+    height: 75px;
+}
+.box-row span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.energy,.attack,.def{position: absolute;}
+.energy{-webkit-text-stroke: 1px rgb(125, 69, 27);top: 34px;
+    color: white;
+    left: 11px;
+    font-size: 29px;}
+.attack{
+    transform: translate(-50%, -50%);
+text-shadow: rgb(131 21 43) -2px 0px, rgb(131 21 43) 0px 2px, rgb(131 21 43) 2px 0px, rgb(131 21 43) 0px -2px;
+font-size: 18.5128px;
+top: 78px;
+left: 16px;
+color: white;
+background: rgb(131 21 43);
+    border-radius: 50%;
+}
+
+.def{
+    transform: translate(-50%, -50%);
+text-shadow: rgb(2 89 89) -2px 0px, rgb(2 89 89) 0px 2px, rgb(2 89 89) 2px 0px, rgb(2 89 89) 0px -2px;
+font-size: 18.5128px;
+top: 103px;
+left: 16px;
+color: white;
+background: rgb(2 89 89);
+    border-radius: 50%;
+}
 @media only screen and (max-width :650px) {
+    .row-group{width: 100%;margin-bottom: 0}
+    .tbl-box td img{display: block;}
  .ui.input{
      width: 100%;
      margin-bottom:20px;
