@@ -21,7 +21,18 @@ code {
 .ui.table{table-layout:fixed;}
 .ui.table tr td{
     padding:5px;
+    vertical-align: middle;
 }
+.ui.table tr td img{
+    vertical-align: middle;
+}
+.stats{margin-bottom: 10px;text-align: center;font-weight: bold;}
+.stats span{margin-right: 10px;}
+.hp{color: #3ac279;}
+.skill{color: #6a3ac2;}
+.morale{color: #c23a3a;}
+.speed{color: #f7ac0a;}
+
 .ui.table thead th{position: relative;}
 .ui.table thead th i.icon.arrow.down{font-size: 12px;padding-right: 5px;}
 i.icon{
